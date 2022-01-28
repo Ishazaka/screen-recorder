@@ -13,3 +13,10 @@ btn.addEventListener('click',async function(){
 let mediaRecorder = new MediaRecorder(stream,{
   // mimeType:mime
 });
+
+  let chunks =[]
+mediaRecorder.addEventListener('dataavailable', function(e){
+chunks.push(e.data)
+
+})
+  
