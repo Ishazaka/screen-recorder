@@ -33,3 +33,10 @@ let a = document.createElement('a')
 a.href= URL.createObjectURL(blob)
 a.download= "video.webm"
 a.click();
+
+ })
+
+
+mediaRecorder.start();
+
+}) 
