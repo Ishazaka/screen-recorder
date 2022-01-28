@@ -20,3 +20,8 @@ chunks.push(e.data)
 
 })
   
+mediaRecorder.addEventListener('stop', function(){
+let blob = new Blob(chunks,{
+type: chunks[0].type
+
+})
