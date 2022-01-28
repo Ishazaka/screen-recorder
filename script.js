@@ -25,3 +25,11 @@ let blob = new Blob(chunks,{
 type: chunks[0].type
 
 })
+
+let video = document.querySelector("video")
+video.src = URL.createObjectURL(blob)
+
+let a = document.createElement('a')
+a.href= URL.createObjectURL(blob)
+a.download= "video.webm"
+a.click();
